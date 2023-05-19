@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backroundcolor"
+    tools:context=".Sports">
+
+    <TextView
+        android:id="@+id/sport_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="Εδώ μπορείς να κλείσεις εισιτήρια για τους αγαπημένους σου αγώνες"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20px"
+        android:layout_marginEnd="10px" />
+
+    <ImageButton
+        android:id="@+id/aekvolos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport_title"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/aek_volos"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/arispaok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/aekvolos"
+        app:layout_constraintTop_toBottomOf="@+id/sport_title"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/aris_paok"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/osfppaok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/arispaok"
+        app:layout_constraintTop_toBottomOf="@+id/sport_title"
+        android:src="@drawable/osfp_paok"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/paoatromitos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pao_atromitos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aekvolos"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/paokael"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/paok_ael"
+        app:layout_constraintStart_toEndOf="@+id/paoatromitos"
+        app:layout_constraintTop_toBottomOf="@+id/arispaok"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/paokmatoafp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/paokmat_osfp"
+        app:layout_constraintStart_toEndOf="@+id/paokael"
+        app:layout_constraintTop_toBottomOf="@+id/osfppaok"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/volosaris"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/volos_aris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paoatromitos"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/valospaok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/volos_paok"
+        app:layout_constraintStart_toEndOf="@+id/volosaris"
+        app:layout_constraintTop_toBottomOf="@+id/paokael"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:id="@+id/latviagreece"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/latvia_greece"
+        app:layout_constraintStart_toEndOf="@+id/valospaok"
+        app:layout_constraintTop_toBottomOf="@+id/paokmatoafp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Πίσω"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
